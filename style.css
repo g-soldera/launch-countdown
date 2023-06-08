@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 20rem;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+  background: hsl(251, 15%, 14%) url(/bg-stars.svg) no-repeat center/cover;
+}
+
+:root {
+  --gray-blue: hsl(237, 18%, 59%);
+  --soft-red: hsl(345, 95%, 68%);
+  --white: hsl(0, 0%, 100%);
+  --darkblue: hsl(236, 21%, 26%);
+  --darkerblue: hsl(235, 16%, 14%);
+  --darkestblue: hsl(234, 17%, 12%);
+}
+
+header {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+}
+
+#timer {
+  width: 96vw;
+  max-width: calc(100vw - 2rem);
+  font-size: 4rem;
+  color: var(--soft-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.mountains {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 12.25%;
+}
+
+.mountains img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+ion-icon {
+  color: var(--gray-blue);
+}
+
+ion-icon:hover {
+  color: var(--soft-red);
+}
+
+.socials {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 1.5rem 0.88rem;
+
+  font-size: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 9.375rem;
+  height: 9.375rem;
+  margin: 0 0.2rem;
+  perspective: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: flipAnimation 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.card-flip {
+  animation: flipAnimation 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.card-front,
+.card-back {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  transform: rotateX(-180deg);
+}
+
+.card-front {
+  background-color: var(--darkblue);
+  transform: rotateX(0deg);
+}
+
+.card-back {
+  background-color: var(--darkblue);
+  transform: rotateX(-180deg);
+}
+
+@keyframes flipAnimation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.time {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.unit {
+  color: var(--gray-blue);
+  font-size: 0.5rem;
+  margin-top: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  #timer {
+    width: 96vw;
+    max-width: 96vw;
+  }
+
+  header {
+    text-align: center;
+    width: 85%;
+  }
+
+  .mountains {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20vh;
+  }
+
+  .mountains img {
+    position: absolute;
+    left: 0;
+    height: 35vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 90%;
+    overflow: hidden;
+  }
+
+  .socials {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+
+  .card {
+    width: 23vw;
+    height: 23vw;
+  }
+
+  .time {
+    font-size: 10vw;
+    font-weight: bold;
+  }
+  .unit {
+    letter-spacing: 0.2rem;
+  }
+}
