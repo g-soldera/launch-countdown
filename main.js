@@ -1,6 +1,12 @@
 import "./style.css"
 import { countdownTimer } from "./timer.js"
 
+let day = 15
+let month = 7
+let year = 2084
+let hour = 10
+let minute = 0
+
 document.querySelector("body").innerHTML = `
   <header>WE'RE LAUNCHING SOON</header>
   <div id="timer"><div class="card-container">
@@ -73,12 +79,6 @@ document.querySelector("body").innerHTML = `
   </div>
 
 `
-
-let day = 15
-let month = 7
-let year = 2023
-let hour = 10
-let minute = 0
 
 const timerElement = document.querySelector("#timer")
 const targetDate = new Date(year, month - 1, day, hour, minute)
