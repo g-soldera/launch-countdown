@@ -1,8 +1,8 @@
 import "./style.css"
 import { countdownTimer } from "./timer.js"
 
-let day = 15
-let month = 7
+let day = 19
+let month = 8
 let year = 2023
 let hour = 10
 let minute = 0
