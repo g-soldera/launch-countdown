@@ -11,6 +11,7 @@ A responsive launch countdown application.
 - HTML
 - CSS
 - JavaScript
+- Vite.JS
 
 ## ✔️ Features
 
