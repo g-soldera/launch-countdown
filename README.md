@@ -15,10 +15,10 @@ A responsive launch countdown application.
 
 ## ✔️ Features
 
--**Responsive Design**: The application is fully responsive and works well on different devices and screen sizes.
--**Countdown Timer**: Display the remaining time until the specified launch date.
--**Customizable Content**: Easily update the launch date, event details, and background image according to your needs.
--**User-friendly Interface**: The application provides a clean and intuitive interface for a seamless user experience.
+- **Responsive Design**: The application is fully responsive and works well on different devices and screen sizes.
+- **Countdown Timer**: Display the remaining time until the specified launch date.
+- **Customizable Content**: Easily update the launch date, event details, and background image according to your needs.
+- **User-friendly Interface**: The application provides a clean and intuitive interface for a seamless user experience.
 
 ## 📃 Getting Started
 
@@ -35,11 +35,9 @@ Follow these steps to get started with Launch Countdown:
 
 Launch Countdown offers various customization options:
 
--**Launch Date**: Update the launch date in the code to match your specific event.
-
--**Event Details**: Modify the event details section to provide information about your upcoming event.
-
--**Background Image**: Replace the default background image with your own image or choose a different one that suits your event.
+- **Launch Date**: Update the launch date in the code to match your specific event.
+- **Event Details**: Modify the event details section to provide information about your upcoming event.
+- **Background Image**: Replace the default background image with your own image or choose a different one that suits your event.
 
 ## ✍️ Contributing
 
