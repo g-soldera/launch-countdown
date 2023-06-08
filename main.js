@@ -3,7 +3,7 @@ import { countdownTimer } from "./timer.js"
 
 let day = 15
 let month = 7
-let year = 2084
+let year = 2023
 let hour = 10
 let minute = 0
 
