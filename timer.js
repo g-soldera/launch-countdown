@@ -1,7 +1,6 @@
 export function countdownTimer(element, targetDate) {
   let interval = 1000
   let timeLeft = getTimeRemaining(targetDate)
-  let previousTimeLeft = getTimeRemaining(targetDate)
 
   function updateTimer() {
     const { days, hours, minutes, seconds } = getTimeComponents(timeLeft)
@@ -11,16 +10,16 @@ export function countdownTimer(element, targetDate) {
     const minuteCard = element.querySelector("#minute-card")
     const secondCard = element.querySelector("#second-card")
 
-    if (previousTimeLeft.days !== days) {
+    if (timeLeft.days !== days) {
       flipCard(dayCard, days)
     }
-    if (previousTimeLeft.hours !== hours) {
+    if (timeLeft.hours !== hours) {
       flipCard(hourCard, hours)
     }
-    if (previousTimeLeft.minutes !== minutes) {
+    if (timeLeft.minutes !== minutes) {
       flipCard(minuteCard, minutes)
     }
-    if (previousTimeLeft.seconds !== seconds) {
+    if (timeLeft.seconds !== seconds) {
       flipCard(secondCard, seconds)
     }
 
@@ -37,7 +36,7 @@ export function countdownTimer(element, targetDate) {
       .toString()
       .padStart(2, "0")
 
-    previousTimeLeft = { days, hours, minutes, seconds }
+    timeLeft = { days, hours, minutes, seconds }
   }
 
   function flipCard(card, newValue) {
