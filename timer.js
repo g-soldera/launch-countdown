@@ -11,16 +11,16 @@ export function countdownTimer(element, targetDate) {
     const minuteCard = element.querySelector("#minute-card")
     const secondCard = element.querySelector("#second-card")
 
-    if (previousTimeLeft.days !== days || days === 0) {
+    if (previousTimeLeft.days !== days) {
       flipCard(dayCard, days)
     }
-    if (previousTimeLeft.hours !== hours || hours === 0) {
+    if (previousTimeLeft.hours !== hours) {
       flipCard(hourCard, hours)
     }
-    if (previousTimeLeft.minutes !== minutes || minutes === 0) {
+    if (previousTimeLeft.minutes !== minutes) {
       flipCard(minuteCard, minutes)
     }
-    if (previousTimeLeft.seconds !== seconds || seconds === 0) {
+    if (previousTimeLeft.seconds !== seconds) {
       flipCard(secondCard, seconds)
     }
 
