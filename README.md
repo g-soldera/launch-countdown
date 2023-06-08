@@ -36,7 +36,9 @@ Follow these steps to get started with Launch Countdown:
 Launch Countdown offers various customization options:
 
 -**Launch Date**: Update the launch date in the code to match your specific event.
+
 -**Event Details**: Modify the event details section to provide information about your upcoming event.
+
 -**Background Image**: Replace the default background image with your own image or choose a different one that suits your event.
 
 ## ✍️ Contributing
