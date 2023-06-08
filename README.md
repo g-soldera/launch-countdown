@@ -4,7 +4,7 @@ A responsive launch countdown application.
 
 ## 📷 Preview
 
-[![Preview](https://cdn.discordapp.com/attachments/1109870440945565726/1111637291144859728/sociallinkingHeader.png)](https://g-soldera.github.io/launch-countdown/)
+[![Preview](https://media.discordapp.net/attachments/1109870440945565726/1116447233844465758/launchHeader.png)](https://g-soldera.github.io/launch-countdown/)
 
 ## 🌐 Technologies
 
