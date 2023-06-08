@@ -1,10 +1,10 @@
 export function countdownTimer(element, targetDate) {
   let interval = 1000
   let timeLeft = getTimeRemaining(targetDate)
+  let previousTimeLeft = getTimeRemaining(targetDate)
 
   function updateTimer() {
     const { days, hours, minutes, seconds } = getTimeComponents(timeLeft)
-    let previousTimeLeft = getTimeRemaining(targetDate)
 
     const dayCard = element.querySelector("#day-card")
     const hourCard = element.querySelector("#hour-card")
