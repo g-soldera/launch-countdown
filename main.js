@@ -77,7 +77,6 @@ document.querySelector("body").innerHTML = `
         </a></div>
     </div>
   </div>
-
 `
 
 const timerElement = document.querySelector("#timer")
